@@ -3,8 +3,8 @@ title: "Mass of chaffinches"
 author: "Emma Rand"
 output:
   bookdown::html_document2: default
-  bookdown::word_document2: default
   bookdown::pdf_document2: default
+  bookdown::word_document2: default
 bibliography: refs/reference.bib
 ---
 
