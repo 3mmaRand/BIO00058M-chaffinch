@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE,
                       message = FALSE,
                       fig.retina = 3)
-options(digits = 2)
+options(digits = 4)
 ```
 
 ```{r packages}
@@ -27,9 +27,13 @@ source("scripts/data_summary.R")
 
 # Introduction {#introduction}
 
-The chaffinch, *Fringilla coelebs*, is one of the most widespread and common passerine bird species [@cramp_1994]. It is sexually dimorphic in plumage with males being brightly coloured with a blue-grey cap and rust-red underparts and females being grey-brown with paler underparts (see Figure \@ref(fig:chaff-photo-fig). This study aimed to determine whether *F.coelebs* were also sexually dimorphic in size.
+The chaffinch, *Fringilla coelebs*, is one of the most widespread and common passerine bird species [@tidyverse][@cramp_1994]. It is sexually dimorphic in plumage with males being brightly coloured with a blue-grey cap and rust-red underparts and females being grey-brown with paler underparts (see Figure \@ref(fig:chaff-photo-fig)). This study aimed to determine whether *F.coelebs* were also sexually dimorphic in size.
+
+<!-- figure legend -->
 
 (ref:chaff-photo-fig) Adult *Fringilla coelebs* Left, male (by Andreas Trepte, CC BY-SA 2.5 <https://creativecommons.org/licenses/by-sa/2.5>, via Wikimedia Commons); right, female (4028mdk09, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons)
+
+<!-- end of fig legend -->
 
 ```{r chaff-photo-fig, out.width="40%", fig.show='hold', fig.cap='(ref:chaff-photo-fig)'}
 pics <- c("pics/Chaffinch_(Fringilla_coelebs)male.jpg",
@@ -135,7 +139,12 @@ ggplot() +
                      limits = c(0, 30)) +
   theme_classic()
 ```
-(ref:chaff-fig) Mass of adult chaffinches caught on the Stray. Error bars are $\bar{x} \pm 1 s.e.$   
+
+<!-- figure legend -->
+
+(ref:chaff-fig) Mass of adult chaffinches caught on the Stray. Error bars are $\bar{x} \pm 1 s.e.$  
+
+<!-- end of fig legend -->
 
 I've also gratuitously included a table with the same information just for the sake of including a table. See Table \@ref(tab:summary-table).
 
