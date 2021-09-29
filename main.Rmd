@@ -155,9 +155,20 @@ knitr::kable(chaff_sum,
              row.names = FALSE)
 ```
 
-
 # Discussion
 
 Here we pick up points from the introduction. See \@ref(introduction).
+
+## Word count
+Word count calculated with package **`wordcountaddin`** [@wc]
+```{r wordcount}
+wc_main <- wordcountaddin:::text_stats("main.Rmd")[3] %>% str_extract("[0-9]+") %>% as.numeric()
+wc_readme <- wordcountaddin:::text_stats("README.md")[3] %>% str_extract("[0-9]+") %>% as.numeric()
+
+```
+
+This doc: `r wc_main`  
+The README: `r wc_readme`  
+Total: `r wc_main + wc_readme`  
 
 # References
